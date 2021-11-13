@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Project</title>
+
+  	<!-- STYLES !-->
+  	<link rel="stylesheet" href="css/main.css">
+  	<link rel="stylesheet" href="css/header.css">
+  	<link rel="stylesheet" href="css/navigation.css">
+  	<link rel="stylesheet" href="css/footer.css">
+  	<link rel="stylesheet" href="css/statistics.css">
+
+  	<!-- For footer icons !-->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<link rel="icon" type="images/png" sizes="16x16" href="img/favicon.png">
+
+
+	<!-- SKRIPTS !-->
+
+	<!-- For a smooth transition !-->
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+			    $("#mySidenav").on("click","a", function (event) {
+			        event.preventDefault();
+			        var id  = $(this).attr('href'),
+			            top = $(id).offset().top;
+			        $('body,html').animate({scrollTop: top}, 1500);
+			    });
+			});
+	</script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+			    $("#footer-links").on("click","a", function (event) {
+			        event.preventDefault();
+			        var id  = $(this).attr('href'),
+			            top = $(id).offset().top;
+			        $('body,html').animate({scrollTop: top}, 1500);
+			    });
+			});
+	</script>
+</head>
+
+<body>
+	<script src="js/navbar.js"></script>
+	<script src="js/toTop.js"></script>
+	<!-- HEADER !-->
+	<header id="header">
+		<div class="sides">
+	    	<a onclick="openNav()" class="menu"></a>
+	  	</div>
+	  	<!-- ПИДОРАС, СДЕЛАЙ УЖЕ НАКОНЕЦ ЦЕНТРИРОВАНИЕ !-->
+	  	<div class="heading" id="heading">
+	  		<h1>Подростковая преступность</h1>
+	    	<div class="meta">
+	    		<p class="logo">-JD-</p><br>
+	      		By <a href="https://vk.com/id364824431" target="_b">Maria Sherina</a>, <a href="https://vk.com/id420574883" target="_b">Ekaterina Gotovtseva</a>, <a href="https://vk.com/somebodyjewish" target="_b">Dmitry Prudovsky</a> on November, 2021
+	    	</div>
+	  	</div>
+	</header>
+
+	<main id="main">
+		<!-- NAVBAR !-->
+	  	<div class="navbar">
+			<div id="mySidenav" class="sidenav">
+				<a class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#info">Главная</a>
+				<a href="#law_and_order">Правопорядок</a>
+				<a href="#precedents">Прецеденты</a>
+				<a href="#statistics">Статистика</a>
+				<a href="#decisions">Решения</a>
+				<a href="#contacts">Контакты</a>
+			</div>
+
+			<input type="image" src="img/toTop.png" alt="Go to top" id="myBtn" onclick="topFunction()">
+		</div>
+
+ 
+		
+		<div class="transition">
+			
+		</div>
+
+		<div class="information">
+			<!-- Main information about juvenile delinquency !-->
+			<div class="info" id="info">
+				<div class="caption">
+					<span class="border">ВВЕДЕНИЕ</span>
+				</div>	
+			</div>
+
+			<div class="text">
+					<h3 style="text-align:center;">Молодёжная преступность</h3>
+
+					<p>Это опасное негативное явление. Она является частью организованной преступности. При этом её опасность состоит, в частности, в том, что она является способом существования молодёжной криминальной среды. Её существование - это отражение той особой экономической и социальной ситуации, которая сложилась в России в последние десятилетия.<br><br>
+					Сегодня сложно четко определить рамки криминальной молодежи, поскольку многие молодые люди, не будучи правонарушителями, уже преодолели "порог криминальности" в своем мышлении и поведении. В социальном самочувствии молодежи превалирует повышенное чувство опасности и в то же время состояние безразличия к преступности. Молодежь оказывается во многом беззащитной перед преступным воздействием. Поэтому одна часть молодежи "погружается" в мир криминальных отношений, а другая - пытается изолироваться от этого мира.</p>
+			</div>	
+
+			<!-- Statistics !-->
+			<div class="statistics" id="statistics">
+				<div class="caption">
+					<span class="border">СТАТИСТИКА</span>
+				</div>			
+			</div>
+
+			<div class="text">
+					<h3 style="text-align:center;">Правонарушения</h3>
+
+					<p>Так, если в 2019 году преступления совершили 13,8 тыс. подростков в возрасте от 14 до 15 лет (из них 12 215 юношей и 1579 девушек), то в 2020 году — 11,3 тыс. (10 283 юноши и 1072 девушки). Также в прошлом году на преступления пошли 22,2 тыс. 16–17-летних подростков (2018 девушек и 20 202 юноши), тогда как годом ранее — 23,5 тыс. (1579 девушек и 21 892 юноши). К слову, чаще всего в России совершают преступления мужчины в возрасте от 30 до 49 лет: в 2020 году таких было более 386 тыс., а годом ранее — более 390 тыс.
+						<br><br>
+					Регионы-лидеры по подростковой преступности в мире: 
+					<ul>
+						<li>Карелия</li>
+						<li>Хабаровский край</li>
+						<li>Волгоградская области</li>
+						<li>Камчатский край</li>
+					</ul>В Москве и Чечне подростковая преступности на минимуме. Кстати, статистика по подростковой преступности улучшается, эксперты связывают это в том числе с наличием смартфонов у подрастающего поколения. 
+					<br><br>
+					Итак, наиболее типичны иные виды правонарушений для молодежи</p>
+
+					<div class="row">
+						<div class="side">
+						    <div>Драка</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-10"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>66%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Хулиганство</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-9"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>50%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Воровство</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-8"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>45%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Вымогательство денег</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-7"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>35%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Разбой</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-6"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>15%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Мошенничество</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-5"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>14%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Насилие</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-4"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>13%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Убийство</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-3"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>8%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Шантаж</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-2"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>7%</div>
+						  </div>
+
+						  <div class="side">
+						    <div>Другие правонарушения</div>
+						  </div>
+						  <div class="middle">
+						    <div class="bar-container">
+						      <div class="bar-1"></div>
+						    </div>
+						  </div>
+						  <div class="side right">
+						    <div>3%</div>
+						  </div>
+						</div>
+			</div>		
+
+			<!-- Information about criminal penalties !-->
+			<div class="law_and_order" id="law_and_order">
+				<div class="caption">
+					<span class="border">ПРАВОПОРЯДОК</span>
+				</div>			
+			</div>
+
+
+			<div class="text">
+					<h3 style="text-align:center;">Статьи</h3>
+
+					<p>УК РФ Статья 87. Уголовная ответственность несовершеннолетних <br><br>
+					1. Несовершеннолетними признаются лица, которым ко времени совершения преступления исполнилось четырнадцать, но не исполнилось восемнадцати лет. <br><br>
+					2. К несовершеннолетним, совершившим преступления, могут быть применены принудительные меры воспитательного воздействия либо им может быть назначено наказание, а при освобождении от наказания судом они могут быть также помещены в специальное учебно-воспитательное учреждение закрытого типа. (в ред. Федеральных законов от 08.12.2003 N 162-ФЗ, от 02.07.2013 N 185-ФЗ)</p>
+					<br>
+
+					<h3 style="text-align:center;">Меры наказания</h3>
+
+					<p>1) Штраф.
+					<br>
+						2) Обязательные или исправительные работы.
+					<br>
+						3) Запрет на осуществление какой-либо деятельности.
+					<br>
+						4) Арест.
+					<br>
+						5) Тюремное заключение на определенный срок.
+					<br>
+						6) Если деяние небольшой или средней тяжести совершено впервые, <br>суд может освободить несовершеннолетнего от ответственности и по отношению к нему <br>могут применяться принудительные воспитательные меры.
+					<br>
+						7) Предупреждение.
+					<br>
+						8) Вменение обязанности загладить нанесенный ущерб.
+					<br>
+						9) Передача под родительский надзор или под контроль специализированного госоргана.
+					<br>
+						10) Ограничение досуга, установление особых правил поведения.</p>
+			</div>	
+
+			<!-- Information about сauses of occurrence !-->
+			<div class="precedents" id="precedents">
+				<div class="caption">
+					<span class="border">ПРЕЦЕДЕНТЫ</span>
+				</div>		
+			</div>
+
+			<div class="text">
+					<h3 style="text-align:center;">Причины роста</h3>
+
+					<p>Несовершеннолетние преступники как правило вырастают в семьях, которые отличает низкий уровень материальной обеспеченности и общей культуры. Обычно и взрослые члены таких семей ориентированы на социальный образ жизни, предпочитают агрессивно, насильственно разрешать внутрисемейные конфликты. Конфликты в семье, родительский алкоголизм, напряженные интерперсональные отношения между членами семьи создают хроническую психотравматическую индивидуальность подростка, которая в ситуации дисгармонического типа воспитания, повторяющихся социально - отрицательных реакций деформирует личность, придаёт ей антиобщественную направленность. Пострадавшие от насилия дети рано приобщаются к употреблению алкоголя и наркотиков, легко становятся участниками криминальных акций. <br><br>
+
+					Бывшие жертвы превращаются в насильников и происходит процесс воспроизведения жестокости. Еще одной серьезной проблемой является недостаток внимания, уделяемого детям, причем это характерно не только для так называемых "неблагополучных" семей, но и для достаточно обеспеченных. Сегодня специалисты с тревогой отмечают энергичное проникновение организованной</p>
+			</div>	
+
+			<!-- Information about solutions to the problem !-->
+			<div class="decisions" id="decisions">
+				<div class="caption">
+					<span class="border">РЕШЕНИЯ</span>
+				</div>			
+			</div>
+
+			<div class="text">
+					<h3 style="text-align:center;">Способы профилактики</h3>
+
+					<p>Хотелось бы сделать акцент на необходимости борьбы с молодёжной преступностью, и прежде всего ее профилактики. Здесь можно выделить несколько приоритетных направлений: 
+						<br>
+						<ul>
+							<li>ужесточение уголовного преследования взрослых, вовлекающих детей, подростков и молодежь в криминальные отношения, нравственно и физически растлевающих их посредством алкогольных напитков, наркотиков и токсичных веществ;</li>
+							<li>принятие специальных мер по трудоустройству и социально-профессиональной адаптации молодежи и подростков, отбывших наказание в местах лишения свободы;</li>
+							<li>сохранение и развитие сети молодежных и подростковых клубов, спортивных секций и кружков художественной самодеятельности; </li>
+							<li>оказание медицинской, социо-психологической и педагогической помощи молодежи и подросткам, прежде всего тем, кто имеет умственные и психические отклонения;</li>
+							<li>правовая пропаганда в учебных заведениях и средствах массовой информации.</li>
+						</ul>
+					
+					 Безусловно, сегодня не приходится рассчитывать на универсальность этих мер, однако предпринятые в комплексе, они, скорее всего, дадут положительный результат и помогут значительно сократить количество молодых людей, вовлеченных и вовлекаемых в преступную деятельность</p>
+			</div>	
+
+			<!-- Feedback !-->
+			<div class="contacts" id="contacts">
+				<div class="caption">
+					<span class="border">КОНТАКТЫ</span>
+				</div>
+			</div>
+
+			<div class="text">
+					<h3 style="text-align:center;">Команда</h3>
+
+					<div class="comand">
+						<div class="card">
+						  <img src="img/info/person1.jpg" alt="Avatar" class="avatar">
+						  <div class="container">
+						    <h4><b>Мария Шерина</b></h4>
+						    <p>Веб-дизайнер</p>
+						    <a target="_blank" href="https://vk.com/id364824431" class="vk_link"><i class="fa fa-vk"></i></a>
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/info/person1.jpg" alt="Avatar" class="avatar">
+						  <div class="container">
+						    <h4><b>Дмитрий Прудовский</b></h4>
+						    <p>Верстальщик</p>
+						    <a target="_blank" href="https://vk.com/somebodyjewish" class="vk_link"><i class="fa fa-vk"></i></a>
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/info/person1.jpg" alt="Avatar" class="avatar">
+						  <div class="container">
+						    <h4><b>Екатерина Готовцева</b></h4>
+						    <p>Контент-менеджер</p>
+						    <a target="_blank" href="https://vk.com/id420574883" class="vk_link"><i class="fa fa-vk"></i></a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="coment">
+						<textarea placeholder="Оставьте свою заявку..."></textarea> <br>
+						<button id="send">Отправить</button>
+					</div>
+			</div>	
+		</div>
+	</main>
+
+	<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>-J<span>D-</span></h3>
+
+        <p class="footer-links" id="footer-links">
+          <a href="#header" class="link-1">Главная</a>
+          
+          <a href="#info">Правопорядок</a>
+        
+          <a href="#law_and_order">Прецеденты</a>
+        
+          <a href="#statistics">Статистика</a>
+          
+          <a href="#decisions">Решения</a>
+          
+          <a href="#contacts">Контакты</a>
+        </p>
+
+        <p class="footer-company-name">-JD- © 2021</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Ломоносовский проспект 27к7</span> Москва, Россия</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+7 (910) 949-42-94</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>О команде</span>
+          Мы ученики социально-правового профиля Университетской гимназии, нас интересуют вопросы законодательства и общественного регулирования.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-vk"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+</body>
+</html>

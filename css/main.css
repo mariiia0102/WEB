@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+	background-color: rgba(145,145,145);
+	background-image: url("../img/main.jpg");
+}	
+
+.transition {
+	width: 100%;
+	height: 65px;
+	background-image: url("../img/crime.jpg");
+}
+
+.information {
+	background-color: rgba(145,145,145);
+	width: 75%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	left: 12.5%;
+}
+
+
+.info, .law_and_order, .precedents, .statistics, .decisions, .contacts {
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.info, .law_and_order, .precedents, .statistics, .decisions, .contacts:: before {
+	background-size: cover;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+}
+
+.info {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/info.jpeg");
+	min-height: 400px;
+}
+
+.law_and_order {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/law_order.jpeg");
+	min-height: 400px;
+}
+
+.precedents {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/precedents.jpeg");
+	min-height: 400px;
+}
+
+.statistics {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/statistics.jpeg");
+	min-height: 400px;
+}
+
+.decisions {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/decisions.jpeg");
+	min-height: 400px;
+}
+
+.contacts {
+	background-image: linear-gradient(180deg, rgba(70,70,70,0.5), rgba(70,70,70,0.5)),  url("../img/info/contacts.jpeg");
+	min-height: 400px;
+}
+
+.text {
+	color: #777;
+	background-color:white;
+	text-align:center;
+	padding:50px 80px;
+	text-align: justify;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .information {
+    background-attachment: scroll;
+  }
+}
+
+.comand {
+	text-align: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.avatar {
+	height: 22.7em;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.vk_link{
+  margin-top: 25px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.coment {
+	text-align: center;
+}
+
+textarea {
+	background-color: #eee;
+	margin-top: 25px;
+  	width:80%;
+  	resize: vertical;
+  	padding:15px;
+  	border-radius:15px;
+  	border:0;
+  	box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  	height:150px;
+}
+
+#send {
+	margin-top: 25px;
+	appearance:none;
+	-webkit-appearance:none;
+	padding:10px;
+	border:none;
+	background-color:#222;
+ 	color:#fff;
+	font-weight:600;
+	border-radius:5px;
+	width:30%;
+}
